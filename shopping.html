@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OnSpot | Two</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<div class="form-wrapper container">
+	<form action="#" method="post" id="theform">
+
+		<header class="header row">
+			<div class="col-lg-7 col-lg-offset-1 col-md-7 col-sm-7 col-xs-7">
+				<h1 class="h1">Want To Get Further Acquainted?</h1> 
+			</div>
+		</header>
+
+		<div class="row">
+			<div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4"></div>
+			<div class="col-lg-6 col-md-8 col-sm-8">
+				<div class="shopping">
+					<span class="new">
+						<input type="checkbox" name="new" value="new" id="checkbox3" />
+				    	<div>
+				        	<label for="checkbox3">New &amp; Now</label>
+				    	</div>
+					</span>
+					
+					<span class="basics">
+						<input type="checkbox" name="basics" value="basics" id="checkbox4" />
+					    <div>
+					        <label for="checkbox4">Basics</label>
+					    </div>
+					</span>
+
+					<span class="collections">
+						<input type="checkbox" name="collections" value="collections" id="checkbox5" />
+					    <div>
+					        <label for="checkbox5">Collections</label>
+					    </div>
+					</span>
+
+					<span class="nightlife">
+						<input type="checkbox" name="nightlife" value="nightlife" id="checkbox6" />
+					    <div>
+					        <label for="checkbox6">Nightlife</label>
+					    </div>
+					</span>
+
+					<span class="vintage">
+						<input type="checkbox" name="vintage" value="vintage" id="checkbox7" />
+					    <div>
+					        <label for="checkbox7">Vintage</label>
+					    </div>
+					</span>
+
+					<span class="activewear">
+						<input type="checkbox" name="activewear" value="activewear" id="checkbox8" />
+					    <div>
+					        <label for="checkbox8">Activewear</label>
+					    </div>
+					</span>
+
+					<span class="swim">
+						<input type="checkbox" name="swim" value="swim" id="checkbox9" />
+					    <div>
+					        <label for="checkbox9">Swim</label>
+					    </div>
+					</span>
+
+					<span class="kids">
+						<input type="checkbox" name="kids" value="kids" id="checkbox10" />
+					    <div>
+					        <label for="checkbox10">Kids</label>
+					    </div>
+					</span>
+
+					<span class="shoes">
+						<input type="checkbox" name="shoes" value="shoes" id="checkbox11" />
+					    <div>
+					        <label for="checkbox11">Shoes</label>
+					    </div>
+					</span>
+
+					<span class="deals">
+						<input type="checkbox" name="deals" value="deals" id="checkbox12" />
+					    <div>
+					        <label for="checkbox12">Deals</label>
+					    </div>
+					</span>
+
+					<span class="likeit">
+						<input type="checkbox" name="likeit" value="likeit" id="checkbox13" />
+					    <div>
+					        <label for="checkbox13">I like All</label>
+					    </div>
+					</span>
+				</div> <!-- shopping -->
+
+				<footer class="footer">
+					<input type="submit" name="submit" value="Submit">
+				</footer>
+
+			</div>
+		</div> <!-- row -->
+	</form> <!-- #theform -->
+</div> <!-- form-wrapper -->
+
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+(function () { 
+	var likeAll = $('#checkbox13')[0],
+	   foo = $('#theform').find('input'),
+	   theform = $('.form_wrapper');
+	    likeAll.addEventListener('click', function() {
+	    	if ( foo.prop('checked') == true) {
+	    		foo.prop('checked', false);
+	    	} else {
+	    		foo.prop('checked', true);
+	    	}
+	    }, false);
+}());
+</script>
+</body>
+</html>
